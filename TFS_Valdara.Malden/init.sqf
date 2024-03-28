@@ -9,9 +9,7 @@
 [] execVM "scripts\chat\init.sqf";
 [] execVM "scripts\other\clearGroup.sqf";
 [] execVM "scripts\other\delete_animals.sqf";
-[] execVM "scripts\SClucas\spawnai.sqf";
-[] execVM "scripts\SClucas\avto.sqf";
-[] execVM "scripts\SClucas\nps.sqf";
+
 
 
 
