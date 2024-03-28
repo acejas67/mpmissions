@@ -1,0 +1,63 @@
+#include "infiSTAR_AdminMenu.hpp"
+
+cba_settings_hasSettingsFile = 1;
+enableDebugConsole[]={"76561198800693430"};
+respawn = "BASE";
+respawnButton = 1;
+respawnOnStart = -1;
+disabledAI=1;
+
+class CfgWorlds
+{
+    class Malden
+    {
+        author = "TFS team"; 
+        //description = "Психиатрическая больница";  
+        pictureMap = "mission_pictures\loadScreen_ca2.jpg"; 
+       // pictureShot = "loadScreen_ca.jpg"; 
+        //loadingTexts[] = {
+       //     "Ваш_текст.", 
+       //     "Ваш_текст.",
+      //      "Ваш_текст.",
+      //      "Ваш_текст.",
+	  //  "Ваш_текст."
+      //  };
+    };
+};
+
+
+
+
+onLoadName="Tales from Slipspace";
+OnLoadMission="Добро пожаловать";
+author="TFS team";
+loadScreen = "mission_pictures\loadScreen_ca.jpg";
+
+class Params 
+{
+	#define DAYTIMEHOUR_DEFAULT 8 
+	#define TIMEACCELERATION_DEFAULT  6
+	#include "\a3\functions_f\Params\paramDaytimeHour.hpp"
+	#include "\a3\Functions_F_MP_Mark\Params\paramTimeAcceleration.hpp" 
+	
+};
+
+
+class Header
+{
+	gameType =  RPG;	// Game type
+};
+
+//pictureShot = "mission_pictures\\loadScreen_ca.jpg";
+
+class CfgDiscordRichPresence 
+{
+	applicationID="1176426837161812071";				//Provided by discord
+	defaultDetails="Andrusha Ping";					//Upper text
+	defaultState="Halo Roleplay | TFS ArmA3";	//Lower text
+	defaultLargeImageKey="tfs_new_512x512";						//Large image
+	defaultLargeImageText="Halo Roleplay";		//Large image hover text
+	defaultSmallImageKey="tfs_512x512";				//Small image
+	defaultSmallImageText="Arma 3";					//Small image hover text
+	useTimeElapsed=1;								//Show time elapsed since the player connected (1 - true, 0 - false)
+};
